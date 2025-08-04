@@ -9,8 +9,8 @@ if [ -z "$current_brightness" ]; then
     exit 1
 fi
 
-# Calculate new brightness (increase by 0.2)
-new_brightness=$(echo "$current_brightness - 0.2" | bc)
+# Calculate new brightness (increase by 0.1)
+new_brightness=$(echo "$current_brightness - 0.1" | bc)
 
 # Apply new brightness level
 xrandr --output VGA-0 --brightness $new_brightness
